@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BookmyShow | Assignment 2 - trailer section</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div
+        class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4  shadow-sm"
+      >
+        <h5 class="my-0  mr-2 font-weight-normal logo ">
+          Movie Trailers
+        </h5>
+        <a class="btn btn-outline-primary ml-1 active text-uppercase" href="#"
+          >Coming Soon</a
+        >
+        <a class="btn btn-outline-primary ml-1 mr-auto text-uppercase" href="#"
+          >Showing Now</a
+        >
+        <nav class="my-2 my-md-0 mr-md-3 d-flex ">
+          <select class="custom-select">
+            <option selected>Popular</option>
+            <option value="1">Relevance</option>
+            <option value="2">New</option>
+            <option value="3">Hot</option>
+          </select>
+          <select class="custom-select">
+            <option selected>English</option>
+            <option value="1">Tamil</option>
+            <option value="2">Kannada</option>
+            <option value="3">Hindi</option>
+          </select>
+          <select class="custom-select">
+            <option selected>All Genres</option>
+            <option value="1">Horror</option>
+            <option value="2">Action</option>
+            <option value="3">Animation</option>
+          </select>
+        </nav>
+        <a class="btn btn-outline-primary" href="#">X</a>
+      </div>
+    </header>
+    <div class="container-fluid greybg">
+      <!-- wrapper -->
+      <!-- <div class="vplayer" style="display:none">
+        
+        <div class="plybtn"></div>
+      </div> -->
+      <div id="movieList"></div>
+      <div class="row"></div>
+    </div>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

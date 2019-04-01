@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+body {
+  width: 100%;
+  height: 100%;
+
+  color: #fff;
+
+  /* transition: 0.2s; */
+}
+.logo {
+  font-family: 'Indie Flower', cursive;
+}
+header {
+  background-color: #000;
+}
+.greybg {
+  background: #2b2b2b;
+}
+div#movieList {
+  background: #2b2b2b;
+  padding-top: 1rem;
+}
+header a.btn,
+header .custom-select {
+  font-size: 12px;
+}
+header .custom-select {
+  margin-right: 1rem;
+}
+
+.vplayer {
+  margin-bottom: 30px;
+  position: relative;
+  padding-top: 56.25%;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #000;
+}
+.vplayer img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.7;
+}
+.vplayer .plybtn {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  width: 90px;
+  height: 60px;
+  background-color: #333;
+  z-index: 1;
+  opacity: 0.8;
+  border-radius: 6px;
+}
+.vplayer .plybtn:before {
+  content: '';
+  border-style: solid;
+  border-width: 15px 0 15px 26px;
+  border-color: transparent transparent transparent #fff;
+}
+.vplayer img,
+.vplayer .plybtn {
+  cursor: pointer;
+}
+.vplayer img,
+.vplayer iframe,
+.vplayer .plybtn,
+.vplayer .plybtn:before {
+  position: absolute;
+}
+.vplayer .plybtn,
+.vplayer .plybtn:before {
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+.vplayer iframe {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.player {
+  display: none;
+}
+
+.movie-block:hover > img,
+.movie-block:hover::after {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+img {
+  transition: 0.2s;
+  cursor: pointer;
+}
+.movie-block {
+  position: relative;
+}
+
+.movie-block::after {
+  content: '';
+  background: url(../images/play-btn.png);
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+  position: absolute;
+  top: 37%;
+  right: 42%;
+}
